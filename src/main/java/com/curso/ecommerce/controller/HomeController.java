@@ -9,6 +9,15 @@ import java.util.stream.Collectors;
 
 import javax.servlet.http.HttpSession;
 
+import com.curso.ecommerce.model.DetalleOrden;
+import com.curso.ecommerce.model.Orden;
+import com.curso.ecommerce.model.Producto;
+import com.curso.ecommerce.model.Usuario;
+import com.curso.ecommerce.service.IDetalleOrdenService;
+import com.curso.ecommerce.service.IOrdenService;
+import com.curso.ecommerce.service.IUsuarioService;
+import com.curso.ecommerce.service.ProductoService;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,15 +28,6 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
-
-import com.curso.ecommerce.model.DetalleOrden;
-import com.curso.ecommerce.model.Orden;
-import com.curso.ecommerce.model.Producto;
-import com.curso.ecommerce.model.Usuario;
-import com.curso.ecommerce.service.IDetalleOrdenService;
-import com.curso.ecommerce.service.IOrdenService;
-import com.curso.ecommerce.service.IUsuarioService;
-import com.curso.ecommerce.service.ProductoService;
 
 @Controller
 @RequestMapping("/")
